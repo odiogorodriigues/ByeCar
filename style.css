@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family= Raleway :wght@500;600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Inter:wght@400;700 & display =swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+header {
+    display: flex;
+    background: #303030;
+    padding-left: 10px;
+}
+    header h1 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-left: 10px;
+    }
+section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+    #left h2{
+        font-family: 'Verdana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        color: #265E70;
+        text-align: center;
+    }
+
+    #rigth h2{
+        font-family: 'Verdana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        color: #265E70;
+        text-align: center;
+    }
+        #rigth h2 strong {
+            color: #4DBCE9;
+        }
+    .slider {
+        display: flex;
+    }
+        .slider .setas {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .slider .setas button {
+            border: 0;
+            background: 0;
+        }
+        #container {
+            padding: 0;
+            display: flex;
+            max-width: 540px;
+            min-height: 540px;
+            overflow: hidden;
+            gap: 2rem;
+        }
+            #container li {
+                background: rgba(77, 188, 233, 0.75);
+                border-radius: 15px;
+                text-align: center;
+                display: flex;
+                min-width: 540px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            #container #nome {
+                font-family: 'Verdana';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 33px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }
+            #container h3 {
+                font-family: 'Verdana';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 31px;
+                line-height: 38px;
+                color: #FFFFFF;
+            }
+            #container h2 {
+                font-family: 'Verdana';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 33px;
+                color: #265E70;
+            }
+            #container h4 {
+                font-family: 'Verdana';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+    #rigth #footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+        #rigth #footer button {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 47px;
+            color: #FFFFFF;
+            background: #4DBCE9;
+            border-radius: 15px;
+            border: 0;
+            padding: 5px 35px 5px 35px;
+        }
+        .modal {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #dfdfdfe5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+          }
+          
+          .modal-card {
+            background-color: #4dbce9bf;
+            padding: 40px 100px;
+            max-width: 838px;
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            color: #ffffff;
+          }
+          
+          .modal-card h1 {
+            font-size: 33px;
+            font-weight: 700;
+            line-height: 40px;
+          }
+          
+          .modal-card p {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 23px;
+          }
+          
+          .modal-card > button:first-of-type {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 13px;
+            top: 13px;
+          }
+          
+          .modal-card > button:last-of-type {
+            font-size: 27px;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            border: none;
+            color: #265e70;
+          }
+     
