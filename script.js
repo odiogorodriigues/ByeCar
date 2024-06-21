@@ -17,7 +17,6 @@ const cardsElements = document.querySelectorAll('#container li')
 const modalElement = document.querySelector('#modal')
 
 let index = 0
-
 const INTERVAL = 5000
 
 function show(num) {
@@ -31,16 +30,10 @@ function show(num) {
         index = cardsElements.length - 1
     }
 
-    cardsElements[index].scrollIntoView({behavior: 'smooth'})
+    cardsElements[index].scrollIntoView({behavior: 'smooth', block: 'nearest'})
 }
 
-setInterval (() => {
-    show (+1)
-}, INTERVAL)
-
 function showModal () {
-    modalElement.innerHTML = ''
-
     modalElement.innerHTML = `
     <div class="modal-card">
         <button onclick="closeModal()">
@@ -56,8 +49,10 @@ function showModal () {
     `
 
     modalElement.style.visibility = 'visible'
+    document.body.classList.add('modal-open')
 }
 
 function closeModal() {
     modalElement.style.visibility = 'hidden'
+    document.body.classList.remove('modal-open')
 }
